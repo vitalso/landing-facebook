@@ -17,22 +17,22 @@ html(lang='en')
 			script(src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js')
 	body
 
-		header
+		header#top
 			.wrap.clearfix
 				a(href='index.html').logo
 					img(src='images/logo.png', alt='logo')
 
 				ul.nav
 					li
-						a(href="#") Почему FB
+						a(href="#why") Почему FB
 					li
-						a(href="#").active Преимущества работы
+						a(href="#how-work") Преимущества работы
 					li
-						a(href="#") Этапы работы
+						a(href="#how-work") Этапы работы
 					li
-						a(href="#") Кто мы?
+						a(href="#about-us") Кто мы?
 					li
-						a(href="#") Контакты
+						a(href="#team") Контакты
 
 				.lang
 					a(href="#") EN
@@ -43,17 +43,17 @@ html(lang='en')
 				.row
 					.col-md-8
 						h1.intro__desc Трафик наивысшего качества с Facebook для приложений с оплатой  <span>за результат</span>
-						a(href="#").btn Узнать подробнее
-					.col-md-4
+						a(href="#why").btn Узнать подробнее
+					.col-md-4.hidden
 						.intro__slider
 							div: img(src='images/screen-1.png', alt='preview-screen' , title='preview-screen')
 							div: img(src='images/screen-2.png', alt='preview-screen' , title='preview-screen')
 
-		section.why
+		section#why.why
 			.container
 				h2.white.with-line Почему именно Facebook?
 				.row
-					.col-md-4.offset-2
+					.col-md-4.offset-md-2
 						.why__item
 							.why__icon
 								img(src="images/why-icon-1.png", alt="why-icon")
@@ -63,7 +63,7 @@ html(lang='en')
 							.why__icon
 								img(src="images/why-icon-2.png", alt="why-icon")
 							p Возможность таргетироваться на релевантную аудиторию
-					.col-md-4.offset-2
+					.col-md-4.offset-md-2
 						.why__item
 							.why__icon
 								img(src="images/why-icon-3.png", alt="why-icon")
@@ -74,9 +74,9 @@ html(lang='en')
 								img(src="images/why-icon-4.png", alt="why-icon")
 							p Большой объем трафика
 
-			a(href="#").arrow__down
+			a(href="#how-work").arrow__down
 
-		section.how__work
+		section#how-work.how__work
 			.container
 				h2 Как мы будем с вами работать
 				.wrap__work
@@ -106,7 +106,7 @@ html(lang='en')
 							.how__icon
 								img(src="images/step-6-2.png", alt="step")
 
-		section.about__us
+		section#about-us.about__us
 			.container
 				h2.white Немного о нас
 				.about__description
@@ -139,18 +139,18 @@ html(lang='en')
 							p.about__title 20 +
 							p Счастливых <br> рекламодателей
 
-			a(href="#").arrow__down
+			a(href="#team").arrow__down
 
-		section.team
+		section#team.team
 			.container
 				h2 <span>Вам не придется создавать команду профессионалов...</span> Вы нас уже нашли!
 				.team__photo
 					img(src="images/team.jpg", alt="team-photo")
 				.row
-					.col-md-3.offset-2
+					.col-md-3.offse-md-2
 						span.contact__info.skype Skype
 						p.contact__data Here nickname
-					.col-md-3.offset-1
+					.col-md-3.offset-md-1
 						span.contact__info.email E-mail
 						p.contact__data Here name e-mail
 
@@ -161,18 +161,17 @@ html(lang='en')
 
 				ul.nav
 					li
-						a(href="#") Почему FB
+						a(href="#why") Почему FB
 					li
-						a(href="#").active Преимущества работы
+						a(href="#how-work") Преимущества работы
 					li
-						a(href="#") Этапы работы
+						a(href="#how-work") Этапы работы
 					li
-						a(href="#") Кто мы?
+						a(href="#about-us") Кто мы?
 					li
-						a(href="#") Контакты
+						a(href="#team") Контакты
 
 				a(href="#top").scroll__top
 
-		
 		script(src='https://code.jquery.com/jquery-3.1.1.min.js' integrity='sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=' crossorigin='anonymous')
 		script(src='js/vendor.js')

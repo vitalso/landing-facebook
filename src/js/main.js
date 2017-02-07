@@ -13,4 +13,17 @@
   	  autoplaySpeed: 3000
   });
 
+  // Slide to section
+  $('.nav a').on('click' , function(){
+    $('.nav a').removeClass('active');
+    $(this).addClass('active');
+    var target = $(this).attr('href');
+    $('html, body').animate({scrollTop: $(target).offset().top}, 1000);
+  });
+
+  $('.scroll__top , .btn , .arrow__down').on('click' , function(){
+    var target = $(this).attr('href');
+    $('html, body').animate({scrollTop: $(target).offset().top}, 1000);
+  });
+
 });

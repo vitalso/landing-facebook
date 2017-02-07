@@ -18,9 +18,9 @@
 		min-height: 100%;
 		position: relative;
 		background-image: url(../images/background.jpg);
-		-webkit-background-size: cover;
+		/*-webkit-background-size: cover;
 		     -o-background-size: cover;
-		        background-size: cover;
+		        background-size: cover;*/
 		background-repeat: no-repeat;
 		background-position: center top;
 		background-color: #fff;
@@ -98,6 +98,11 @@ header , footer {
 		text-transform: uppercase;
 		text-decoration: none;
 		color: #FFF;
+		-webkit-transition: all .3s ease;
+		   -moz-transition: all .3s ease;
+		    -ms-transition: all .3s ease;
+		     -o-transition: all .3s ease;
+		        transition: all .3s ease;
 		&.active {
 			color: $brand-color;
 			border-bottom: 1px solid $brand-color;
@@ -276,6 +281,7 @@ header , footer {
 .how__work {
 	padding-top: 80px;
 	padding-bottom: 110px;
+	background-color: #FFF;
 }
 
 	.wrap__work {
@@ -437,8 +443,84 @@ footer {
 
 /* Responsive style */
 
+@media screen and (max-width: 1024px) {
+
+	.nav li {
+	    margin: 0 10px;
+	}
+
+	.wrap__work {
+		-webkit-background-size: 73%;
+		     -o-background-size: 73%;
+		        background-size: 73%;
+    	background-position: right 15%;
+	}
+
+	.contact__data {
+		font-size: 25px;
+	}
+
+}
+
+@media screen and (max-width: 992px) {
+
+	h1 , h2 {
+		font-size: 24px;
+	}
+
+	.why__item {
+		padding: 50px 0;
+		font-size: 18px;
+	}
+
+	.wrap__work {
+		background-image: none;
+	}
+
+	.about__description {
+		font-size: 17px;
+	}
+
+	.contact__data {
+	    font-size: 18px;
+	}
+
+	h2 span {
+    	font-size: 16px;
+    }
+
+}
+
 @media screen and (max-width: 768px) {
 	
+	.hidden {
+		display: none;
+	}
 
+	.nav {
+		display: none;
+	}
+
+	.why__item {
+		padding: 20px 0;
+	}
+
+	.about__description {
+		max-width: 100%;
+		padding: 0;
+	}
+
+	.about__item {
+		margin: 20px 0;
+		.about__icon {
+			display: block;
+			width: 100%;
+			height: auto;
+		}
+	}
+
+	.contact__info {
+		margin-top: 20px;
+	}
 
 }
