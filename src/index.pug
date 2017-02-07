@@ -11,14 +11,14 @@ html(lang='en')
 		link(rel='stylesheet' , href='css/slick-theme.css')
 		link(rel='stylesheet' , href='css/bootstrap-grid.css')
 		link(rel='stylesheet' , href='css/style.css')
-		link(rel='stylesheet' , href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css')
+		//link(rel='stylesheet' , href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css')
 		//if lt IE 9
 			script(src='https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js')
 			script(src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js')
 	body
 
 		header
-			.header__wrap.clearfix
+			.wrap.clearfix
 				a(href='index.html').logo
 					img(src='images/logo.png', alt='logo')
 
@@ -48,6 +48,130 @@ html(lang='en')
 						.intro__slider
 							div: img(src='images/screen-1.png', alt='preview-screen' , title='preview-screen')
 							div: img(src='images/screen-2.png', alt='preview-screen' , title='preview-screen')
+
+		section.why
+			.container
+				h2.white.with-line Почему именно Facebook?
+				.row
+					.col-md-4.offset-2
+						.why__item
+							.why__icon
+								img(src="images/why-icon-1.png", alt="why-icon")
+							p Высокое качество трафика (ARPU выше среднего в 2-5 раза)
+					.col-md-4
+						.why__item
+							.why__icon
+								img(src="images/why-icon-2.png", alt="why-icon")
+							p Возможность таргетироваться на релевантную аудиторию
+					.col-md-4.offset-2
+						.why__item
+							.why__icon
+								img(src="images/why-icon-3.png", alt="why-icon")
+							p Платите только за <br> инстал и продажу
+					.col-md-4
+						.why__item
+							.why__icon
+								img(src="images/why-icon-4.png", alt="why-icon")
+							p Большой объем трафика
+
+			a(href="#").arrow__down
+
+		section.how__work
+			.container
+				h2 Как мы будем с вами работать
+				.wrap__work
+					.flex__container
+						.how__item
+							.how__icon
+								img(src="images/step-1.png", alt="step")
+							p Оговариваем условия, <br> определяем KPI
+						.how__item
+							.how__icon
+								img(src="images/step-2.png", alt="step")
+							p Проводим <br> интеграцию
+						.how__item
+							.how__icon
+								img(src="images/step-3.png", alt="step")
+							p Запуск <br> кампаний
+					.flex__container.reverse
+						.how__item
+							.how__icon
+								img(src="images/step-4.png", alt="step")
+							p Оптимизация трафика <br> по качеству
+						.how__item
+							.how__icon
+								img(src="images/step-5.png", alt="step")
+							p Произведение <br> оплаты
+						.how__item
+							.how__icon
+								img(src="images/step-6-2.png", alt="step")
+
+		section.about__us
+			.container
+				h2.white Немного о нас
+				.about__description
+					p Мы специализируемся на закупке и монетизации трафика с Facebook. <br> У нас огромный опыт работы в интернет-маркетинге и CPA.
+					p Мы считаем, что  ключ к успеху, это заниматься делом в котором вы разбираетесь больше всего, а все остальное лучше оставить профессионалам.
+					p Таким образом, каждый из этапов работы выполняется максимально эффективно. Мы не развиваем собственные продукты. Наша страсть – трафик.
+				.row
+					.col-md-3
+						.about__item
+							.about__icon
+								img(src="images/about-1.png", alt="about-icon")
+							p.about__title 3 года
+							p Минимальный опыт работы <br> трафик-менеджера
+					.col-md-3
+						.about__item
+							.about__icon
+								img(src="images/about-2.png", alt="about-icon")
+							p.about__title 300 000 $
+							p Ежемесячный рекламный <br> бюджет
+					.col-md-3
+						.about__item
+							.about__icon
+								img(src="images/about-3.png", alt="about-icon")
+							p.about__title 10 000
+							p Инсталов в сутки
+					.col-md-3
+						.about__item
+							.about__icon
+								img(src="images/about-4.png", alt="about-icon")
+							p.about__title 20 +
+							p Счастливых <br> рекламодателей
+
+			a(href="#").arrow__down
+
+		section.team
+			.container
+				h2 <span>Вам не придется создавать команду профессионалов...</span> Вы нас уже нашли!
+				.team__photo
+					img(src="images/team.jpg", alt="team-photo")
+				.row
+					.col-md-3.offset-2
+						span.contact__info.skype Skype
+						p.contact__data Here nickname
+					.col-md-3.offset-1
+						span.contact__info.email E-mail
+						p.contact__data Here name e-mail
+
+		footer
+			.wrap.clearfix
+				a(href='index.html').logo
+					img(src='images/logo-footer.png', alt='logo')
+
+				ul.nav
+					li
+						a(href="#") Почему FB
+					li
+						a(href="#").active Преимущества работы
+					li
+						a(href="#") Этапы работы
+					li
+						a(href="#") Кто мы?
+					li
+						a(href="#") Контакты
+
+				a(href="#top").scroll__top
 
 		
 		script(src='https://code.jquery.com/jquery-3.1.1.min.js' integrity='sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=' crossorigin='anonymous')
