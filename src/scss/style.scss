@@ -117,6 +117,7 @@ header , footer {
 		max-width: 1800px;
 		margin: 0 auto;
 		padding: 0 10px;
+		position: relative;
 	}
 
 		.logo {
@@ -134,6 +135,13 @@ header , footer {
 			a {
 				letter-spacing: 1px;
 			}
+		}
+
+		.nav__btn {
+			display: none;
+			position: absolute;
+			right: 10px;
+			top: -5px;
 		}
 
 		.lang {
@@ -466,6 +474,15 @@ footer {
 
 	h1 , h2 {
 		font-size: 24px;
+		line-height: 35px;
+	}
+
+	.intro__desc span {
+		background-size: 100%;
+    	background-position: 0 9px;
+    	width: auto;
+    	height: auto;
+    	padding: 3px 20px;
 	}
 
 	.why__item {
@@ -497,12 +514,47 @@ footer {
 		display: none;
 	}
 
+	header {
+		padding-top: 20px;
+	}
+
 	.nav {
 		display: none;
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, .5);
+		text-align: center;
+		padding-top: 25%;
+			li {
+				display: block;
+				margin: 25px 0;
+			}
+	}
+
+	.nav__btn {
+		display: block;
+	}
+
+	.lang {
+		float: none;
 	}
 
 	.why__item {
 		padding: 20px 0;
+	}
+
+	.flex__container {
+		display: block;
+		.how__item {
+			width: 100%;
+			margin: 10px 0;
+		}
+		&.reverse .how__item:last-child {
+    		transform: translate(0,0);
+		}
 	}
 
 	.about__description {
@@ -521,6 +573,18 @@ footer {
 
 	.contact__info {
 		margin-top: 20px;
+	}
+
+}
+
+@media screen and (max-width: 480px) {
+	
+	.intro__desc {
+		padding-top: 30px;
+	}
+
+	h1 , h2 {
+		font-size: 22px;
 	}
 
 }

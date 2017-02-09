@@ -26,4 +26,14 @@
     $('html, body').animate({scrollTop: $(target).offset().top}, 1000);
   });
 
+  // Responsive nav
+  if($(window).width() < 768) {
+    $('.nav__btn').on('click' , function(){
+      $('.nav').slideToggle();
+    });
+    $('.nav').on('click' , function(){
+      $('.nav').slideUp();
+    })
+  }
+
 });
