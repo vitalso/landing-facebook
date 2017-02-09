@@ -36,4 +36,15 @@
     })
   }
 
+  // Wow animation
+  wow = new WOW(
+    {
+      boxClass: 'wow',
+      animateClass: 'animated',
+      offset:       180,
+      mobile: false
+    }
+  );
+  wow.init();
+
 });
