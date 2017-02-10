@@ -19,7 +19,7 @@
 
     width: 50px;
     height: 50px;
-    margin-top: -25px;
+    margin-top: -40px;
     padding: 0;
 
     cursor: pointer;
@@ -62,7 +62,7 @@
 
 .slick-prev
 {
-    left: -70px;
+    left: -20px;
 }
 [dir='rtl'] .slick-prev
 {
@@ -72,7 +72,7 @@
 
 .slick-next
 {
-    right: -33px;
+    right: -20px;
 }
 [dir='rtl'] .slick-next
 {

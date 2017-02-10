@@ -121,6 +121,7 @@ header , footer {
 	}
 
 		.logo {
+			margin-top: -30px;
 			float: left;
 		}
 
@@ -242,18 +243,19 @@ header , footer {
 		&.white {
 			color: #FFF;
 		}
-		&.with-line:after {
-				content: "";
-				position: absolute;
-				width: 80px;
-				height: 2px;
-				top: 0;
-				left: 50%;
-				margin-left: -40px;
-				background: #f2783a;
-			    background: -webkit-linear-gradient(left, #f2783a 0%, #ee4d5c 100%);
-			    background: linear-gradient(to right, #f2783a 0%, #ee4d5c 100%);
-			}
+	}
+
+	.with-line:after {
+		content: "";
+		position: absolute;
+		width: 80px;
+		height: 2px;
+		top: 0;
+		left: 50%;
+		margin-left: -40px;
+		background: #f2783a;
+		background: -webkit-linear-gradient(left, #f2783a 0%, #ee4d5c 100%);
+		background: linear-gradient(to right, #f2783a 0%, #ee4d5c 100%);
 	}
 
 	.why__item {
@@ -299,6 +301,9 @@ header , footer {
 		background-image: url(../images/how-scheme.png);
 		background-repeat: no-repeat;
 		background-position: right 13%;
+			&.en {
+				background-image: url(../images/how-scheme-en.png);
+			}
 	}
 
 	.flex__container {
@@ -394,6 +399,34 @@ header , footer {
 		}
 	}
 
+	.team__slider {
+		position: relative;
+		padding: 80px 50px 30px 50px;
+	}
+
+	.team__item {
+		text-align: center;
+		font-size: 15px;
+		color: #A68BDA;
+		font-weight: 300;
+		.team__image {
+			max-width: 220px;
+			margin-left: auto;
+			margin-right: auto;
+			margin-bottom: 30px;
+			overflow: hidden;
+			-webkit-border-radius: 50%;
+			        border-radius: 50%;
+		}
+		h3 {
+			padding: 0 25%;
+			font-family: "GothamProMedium";
+			font-size: 20px;
+			color: #FFF;
+			margin-bottom: 10px;
+		}
+	}
+
 /* Style team section */
 
 .team {
@@ -433,7 +466,7 @@ header , footer {
 /* Footer */
 
 footer {
-	padding: 40px 0;
+	padding: 50px 0;
 	background-image: url(../images/figure.png);
 	background-position: 19% 25%;
 	background-repeat: no-repeat;
