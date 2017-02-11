@@ -122,6 +122,8 @@ header , footer {
 
 		.logo {
 			margin-top: -30px;
+			position: relative;
+			left: 30px;
 			float: left;
 		}
 
@@ -176,6 +178,11 @@ header , footer {
 				background-position: 0 9px;
 				width: 309px;
 				height: 59px;
+				&.en {
+					max-width: 309px;
+					width: auto;
+					padding: 0 25px;
+				}
 			}
 	}
 
@@ -466,11 +473,14 @@ header , footer {
 /* Footer */
 
 footer {
-	padding: 50px 0;
+	padding: 60px 0;
 	background-image: url(../images/figure.png);
 	background-position: 19% 25%;
 	background-repeat: no-repeat;
 	background-color: #281a4b;
+	.logo {
+		margin-top: -40px;
+	}
 }
 
 	.scroll__top {
@@ -573,6 +583,10 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
+
+	.logo {
+		left: 0;
+	}
 	
 	.hidden {
 		display: none;
