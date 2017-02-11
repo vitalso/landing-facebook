@@ -113,6 +113,10 @@ header , footer {
 	}
 }
 
+	header {
+		overflow: hidden;
+	}
+
 	.wrap {
 		max-width: 1800px;
 		margin: 0 auto;
@@ -499,7 +503,7 @@ footer {
 
 /* Responsive style */
 
-@media screen and (max-width: 1280px) and (max-height: 800px) {
+@media screen and (max-width: 1280px) {
 
 	.intro {
 		h1 {
@@ -595,7 +599,7 @@ footer {
 	}
 
 	header {
-		padding-top: 20px;
+		padding-top: 40px;
 	}
 
 	.nav {
