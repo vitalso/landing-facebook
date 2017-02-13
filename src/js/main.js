@@ -78,7 +78,7 @@
     {
       boxClass: 'wow',
       animateClass: 'animated',
-      offset:       180,
+      offset:       0,
       mobile: false
     }
   );
